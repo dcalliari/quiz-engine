@@ -1,0 +1,37 @@
+[
+	{
+		"type": "one-choice",
+		"title": "Single choice",
+		"description": "Select the correct answer",
+		"image": "https://i.imgur.com/zPKiq.jpeg",
+		"question": "What is the capital of France?",
+		"options": [
+			{ "text": "London", "isCorrect": false },
+			{ "text": "Paris", "isCorrect": true },
+			{ "text": "Berlin", "isCorrect": false },
+			{ "text": "Madrid", "isCorrect": false }
+		]
+	},
+	{
+		"type": "multiple-choice",
+		"title": "Multiple choice",
+		"description": "Select all the correct answers",
+		"image": "https://i.imgur.com/VGeqvLY.jpeg",
+		"question": "Which of the following are considered primary colors?",
+		"options": [
+			{ "text": "Red", "isCorrect": true },
+			{ "text": "Green", "isCorrect": false },
+			{ "text": "Blue", "isCorrect": true },
+			{ "text": "Yellow", "isCorrect": true },
+			{ "text": "Orange", "isCorrect": false }
+		]
+	},
+	{
+		"type": "input",
+		"title": "Input Question",
+		"description": "Type your answer",
+		"image": "https://i.imgur.com/7SaRAef.jpeg",
+		"question": "What is the chemical formula for water?",
+		"correctAnswer": "H2O"
+	}
+]
