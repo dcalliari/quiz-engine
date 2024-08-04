@@ -1,5 +1,6 @@
 import React from "react";
 import "@/styles/components/Question.scss";
+import Image from "next/image";
 
 const Question = ({
 	question,
@@ -56,7 +57,9 @@ const Question = ({
 			<div className="question-title">{question.title}</div>
 			<div className="question-description">{question.description}</div>
 			{question.image && (
-				<img
+				<Image
+					width={500}
+					height={150}
 					src={question.image}
 					alt={question.title}
 					className="question-image"

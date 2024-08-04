@@ -3,7 +3,7 @@
 		"type": "one-choice",
 		"title": "Single choice",
 		"description": "Select the correct answer",
-		"image": "https://images.unsplash.com/photo-1520257328559-2062fc7de0b3",
+		"image": "https://images.unsplash.com/photo-1520257328559-2062fc7de0b3?w=500",
 		"question": "Which planet is known as the Red Planet?",
 		"options": [
 			{ "text": "Earth", "isCorrect": false },
@@ -16,7 +16,7 @@
 		"type": "multiple-choice",
 		"title": "Multiple choice",
 		"description": "Select all the correct answers",
-		"image": "https://images.unsplash.com/photo-1692980643562-d9495b3370f2",
+		"image": "https://images.unsplash.com/photo-1692980643562-d9495b3370f2?w=500",
 		"question": "Which of the following are mammals?",
 		"options": [
 			{ "text": "Dolphin", "isCorrect": true },
@@ -30,7 +30,7 @@
 		"type": "input",
 		"title": "Input Question",
 		"description": "Type your answer",
-		"image": "https://plus.unsplash.com/premium_photo-1683134169138-9037062cba51",
+		"image": "https://plus.unsplash.com/premium_photo-1683134169138-9037062cba51?w=500",
 		"question": "What is the smallest prime number?",
 		"correctAnswer": "2"
 	},
@@ -38,7 +38,7 @@
 		"type": "one-choice",
 		"title": "Single choice",
 		"description": "Select the correct answer",
-		"image": "https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a",
+		"image": "https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?w=500",
 		"question": "Who wrote 'To Kill a Mockingbird'?",
 		"options": [
 			{ "text": "Harper Lee", "isCorrect": true },
@@ -51,7 +51,7 @@
 		"type": "multiple-choice",
 		"title": "Multiple choice",
 		"description": "Select all the correct answers",
-		"image": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3",
+		"image": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=500",
 		"question": "Which of the following are programming languages?",
 		"options": [
 			{ "text": "Python", "isCorrect": true },
@@ -65,7 +65,7 @@
 		"type": "input",
 		"title": "Input Question",
 		"description": "Type your answer",
-		"image": "https://plus.unsplash.com/premium_photo-1677025010781-de5c890c862a",
+		"image": "https://plus.unsplash.com/premium_photo-1677025010781-de5c890c862a?w=500",
 		"question": "How many continents are there on Earth?",
 		"correctAnswer": "7"
 	},
@@ -73,7 +73,7 @@
 		"type": "one-choice",
 		"title": "Single choice",
 		"description": "Select the correct answer",
-		"image": "https://images.unsplash.com/photo-1628864005140-7770b9b8e7dd",
+		"image": "https://images.unsplash.com/photo-1628864005140-7770b9b8e7dd?w=500",
 		"question": "Which element has the chemical symbol 'Au'?",
 		"options": [
 			{ "text": "Silver", "isCorrect": false },
@@ -86,7 +86,7 @@
 		"type": "multiple-choice",
 		"title": "Multiple choice",
 		"description": "Select all the correct answers",
-		"image": "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23",
+		"image": "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=500",
 		"question": "Which of these countries are located in Africa?",
 		"options": [
 			{ "text": "Nigeria", "isCorrect": true },
@@ -100,7 +100,7 @@
 		"type": "input",
 		"title": "Input Question",
 		"description": "Type your answer",
-		"image": "https://plus.unsplash.com/premium_photo-1669750791963-ec6f3a565fb9",
+		"image": "https://plus.unsplash.com/premium_photo-1669750791963-ec6f3a565fb9?w=500",
 		"question": "What is the largest ocean on Earth?",
 		"correctAnswer": "Pacific"
 	},
@@ -108,7 +108,7 @@
 		"type": "one-choice",
 		"title": "Single choice",
 		"description": "Select the correct answer",
-		"image": "https://images.unsplash.com/photo-1502152080777-e8335fa08a3d",
+		"image": "https://images.unsplash.com/photo-1502152080777-e8335fa08a3d?w=500",
 		"question": "What gas do plants absorb from the atmosphere for photosynthesis?",
 		"options": [
 			{ "text": "Oxygen", "isCorrect": false },
@@ -121,7 +121,7 @@
 		"type": "multiple-choice",
 		"title": "Multiple choice",
 		"description": "Select all the correct answers",
-		"image": "https://images.unsplash.com/photo-1684994740857-ff7a2c3b7f9f",
+		"image": "https://images.unsplash.com/photo-1684994740857-ff7a2c3b7f9f?w=500",
 		"question": "Which of the following are planets in our solar system?",
 		"options": [
 			{ "text": "Mercury", "isCorrect": true },
@@ -135,7 +135,7 @@
 		"type": "input",
 		"title": "Input Question",
 		"description": "Type your answer",
-		"image": "https://plus.unsplash.com/premium_photo-1670055280031-764eb9f017b7",
+		"image": "https://plus.unsplash.com/premium_photo-1670055280031-764eb9f017b7?w=500",
 		"question": "What is the freezing point of water in degrees Celsius?",
 		"correctAnswer": "0"
 	}
