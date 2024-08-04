@@ -17,6 +17,7 @@ const Question = ({
 					onClick={() => handleAnswerOptionClick(option.text)}
 					className={`option-button ${option.text === selectedAnswer ? "selected" : ""}`}
 					type="button"
+					aria-pressed={option.text === selectedAnswer}
 				>
 					{option.text}
 				</button>
@@ -29,6 +30,7 @@ const Question = ({
 					onClick={() => handleMultipleChoiceOptionClick(option.text)}
 					className={`option-button ${selectedAnswer?.includes(option.text) ? "selected" : ""}`}
 					type="button"
+					aria-pressed={selectedAnswer?.includes(option.text)}
 				>
 					{option.text}
 				</button>
@@ -46,6 +48,7 @@ const Question = ({
 					onChange={(e) => handleInputChange(e.target.value)}
 					className="input-answer"
 					placeholder="Type your answer..."
+					aria-label="Type your answer"
 				/>
 			);
 		}
@@ -54,8 +57,8 @@ const Question = ({
 
 	return (
 		<div className="question">
-			<div className="question-title">{question.title}</div>
-			<div className="question-description">{question.description}</div>
+			<h2 className="question-title">{question.title}</h2>
+			<p className="question-description">{question.description}</p>
 			{question.image && (
 				<Image
 					width={500}
