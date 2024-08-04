@@ -11,7 +11,7 @@ This is a Quiz project created for a technical assessment for the React Develope
 
 ## Demo
 
-Check the live demo of the Quiz Engine [here](https://quiz-engine.vercel.app)
+Check the live demo of the Quiz Engine [here](https://quiz-engine-three.vercel.app/)
 
 ## Features
 
