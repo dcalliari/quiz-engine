@@ -3,35 +3,140 @@
 		"type": "one-choice",
 		"title": "Single choice",
 		"description": "Select the correct answer",
-		"image": "https://i.imgur.com/zPKiq.jpeg",
-		"question": "What is the capital of France?",
+		"image": "https://images.unsplash.com/photo-1520257328559-2062fc7de0b3",
+		"question": "Which planet is known as the Red Planet?",
 		"options": [
-			{ "text": "London", "isCorrect": false },
-			{ "text": "Paris", "isCorrect": true },
-			{ "text": "Berlin", "isCorrect": false },
-			{ "text": "Madrid", "isCorrect": false }
+			{ "text": "Earth", "isCorrect": false },
+			{ "text": "Mars", "isCorrect": true },
+			{ "text": "Jupiter", "isCorrect": false },
+			{ "text": "Saturn", "isCorrect": false }
 		]
 	},
 	{
 		"type": "multiple-choice",
 		"title": "Multiple choice",
 		"description": "Select all the correct answers",
-		"image": "https://i.imgur.com/VGeqvLY.jpeg",
-		"question": "Which of the following are considered primary colors?",
+		"image": "https://images.unsplash.com/photo-1692980643562-d9495b3370f2",
+		"question": "Which of the following are mammals?",
 		"options": [
-			{ "text": "Red", "isCorrect": true },
-			{ "text": "Green", "isCorrect": false },
-			{ "text": "Blue", "isCorrect": true },
-			{ "text": "Yellow", "isCorrect": true },
-			{ "text": "Orange", "isCorrect": false }
+			{ "text": "Dolphin", "isCorrect": true },
+			{ "text": "Shark", "isCorrect": false },
+			{ "text": "Elephant", "isCorrect": true },
+			{ "text": "Penguin", "isCorrect": false },
+			{ "text": "Bat", "isCorrect": true }
 		]
 	},
 	{
 		"type": "input",
 		"title": "Input Question",
 		"description": "Type your answer",
-		"image": "https://i.imgur.com/7SaRAef.jpeg",
-		"question": "What is the chemical formula for water?",
-		"correctAnswer": "H2O"
+		"image": "https://plus.unsplash.com/premium_photo-1683134169138-9037062cba51",
+		"question": "What is the smallest prime number?",
+		"correctAnswer": "2"
+	},
+	{
+		"type": "one-choice",
+		"title": "Single choice",
+		"description": "Select the correct answer",
+		"image": "https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a",
+		"question": "Who wrote 'To Kill a Mockingbird'?",
+		"options": [
+			{ "text": "Harper Lee", "isCorrect": true },
+			{ "text": "Mark Twain", "isCorrect": false },
+			{ "text": "Ernest Hemingway", "isCorrect": false },
+			{ "text": "F. Scott Fitzgerald", "isCorrect": false }
+		]
+	},
+	{
+		"type": "multiple-choice",
+		"title": "Multiple choice",
+		"description": "Select all the correct answers",
+		"image": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3",
+		"question": "Which of the following are programming languages?",
+		"options": [
+			{ "text": "Python", "isCorrect": true },
+			{ "text": "HTML", "isCorrect": false },
+			{ "text": "Java", "isCorrect": true },
+			{ "text": "CSS", "isCorrect": false },
+			{ "text": "Ruby", "isCorrect": true }
+		]
+	},
+	{
+		"type": "input",
+		"title": "Input Question",
+		"description": "Type your answer",
+		"image": "https://plus.unsplash.com/premium_photo-1677025010781-de5c890c862a",
+		"question": "How many continents are there on Earth?",
+		"correctAnswer": "7"
+	},
+	{
+		"type": "one-choice",
+		"title": "Single choice",
+		"description": "Select the correct answer",
+		"image": "https://images.unsplash.com/photo-1628864005140-7770b9b8e7dd",
+		"question": "Which element has the chemical symbol 'Au'?",
+		"options": [
+			{ "text": "Silver", "isCorrect": false },
+			{ "text": "Gold", "isCorrect": true },
+			{ "text": "Iron", "isCorrect": false },
+			{ "text": "Copper", "isCorrect": false }
+		]
+	},
+	{
+		"type": "multiple-choice",
+		"title": "Multiple choice",
+		"description": "Select all the correct answers",
+		"image": "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23",
+		"question": "Which of these countries are located in Africa?",
+		"options": [
+			{ "text": "Nigeria", "isCorrect": true },
+			{ "text": "Canada", "isCorrect": false },
+			{ "text": "Egypt", "isCorrect": true },
+			{ "text": "Australia", "isCorrect": false },
+			{ "text": "Kenya", "isCorrect": true }
+		]
+	},
+	{
+		"type": "input",
+		"title": "Input Question",
+		"description": "Type your answer",
+		"image": "https://plus.unsplash.com/premium_photo-1669750791963-ec6f3a565fb9",
+		"question": "What is the largest ocean on Earth?",
+		"correctAnswer": "Pacific"
+	},
+	{
+		"type": "one-choice",
+		"title": "Single choice",
+		"description": "Select the correct answer",
+		"image": "https://images.unsplash.com/photo-1502152080777-e8335fa08a3d",
+		"question": "What gas do plants absorb from the atmosphere for photosynthesis?",
+		"options": [
+			{ "text": "Oxygen", "isCorrect": false },
+			{ "text": "Carbon Dioxide", "isCorrect": true },
+			{ "text": "Nitrogen", "isCorrect": false },
+			{ "text": "Hydrogen", "isCorrect": false }
+		]
+	},
+	{
+		"type": "multiple-choice",
+		"title": "Multiple choice",
+		"description": "Select all the correct answers",
+		"image": "https://images.unsplash.com/photo-1684994740857-ff7a2c3b7f9f",
+		"question": "Which of the following are planets in our solar system?",
+		"options": [
+			{ "text": "Mercury", "isCorrect": true },
+			{ "text": "Pluto", "isCorrect": true },
+			{ "text": "The Moon", "isCorrect": false },
+			{ "text": "Venus", "isCorrect": true },
+			{ "text": "Asteroid Belt", "isCorrect": false }
+		]
+	},
+	{
+		"type": "input",
+		"title": "Input Question",
+		"description": "Type your answer",
+		"image": "https://plus.unsplash.com/premium_photo-1670055280031-764eb9f017b7",
+		"question": "What is the freezing point of water in degrees Celsius?",
+		"correctAnswer": "0"
 	}
 ]
