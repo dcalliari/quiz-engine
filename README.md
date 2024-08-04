@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quiz Engine
+
+This is a Quiz project created for a technical assessment for the React Developer role at SiPhox Health to display React and CSS/SCSS skills. The goal is to render quiz questions one by one based on a JSON structure. The quiz engine should support one-choice, multiple-choice and input questions. Additionally, it should support conditional navigation between questions based on user answers. Each slide can have an image, title, and description.
+
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+
+## Demo
+
+Check the live demo of the Quiz Engine [here](https://quiz-engine.vercel.app)
+
+## Features
+
+- Quizzes with one-choice, multiple-choice and input questions
+- Optional title, description and image in each question
+- Progress tracking and result display
+- Responsive design for all devices
+
+## Tech Stack
+
+- **Framework**: [Next.js 14.2.5](https://nextjs.org/)
+- **Styling**: [Sass CSS](https://sass-lang.com/)
+- **Language**: [JavaScript](https://www.javascript.com/)
+- **Linter**: [Biome](https://biomejs.dev/pt-br/)
+- **Package Manager**: [npm 10.7.0](https://www.npmjs.com/)
 
 ## Getting Started
 
-First, run the development server:
+To get this project running locally, follow these steps
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v20 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Instalation
+
+1. Clone the repository
+   ```sh
+   git clone https://github.com/booude/quiz-engine.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd Quiz-Engine
+   ```
+3. Install dependencies
+   ```sh
+   npm install
+   ```
+   or
+   ```sh
+   yarn install
+   ```
+   or
+   ```sh
+   pnpm install
+   ```
+   or
+   ```sh
+   bun install
+   ```
+
+### Usage
+
+1. Start the development server
+   ```sh
+   npm run dev
+   ```
+   or
+   ```sh
+   yarn dev
+   ```
+   or
+   ```sh
+   pnpm dev
+   ```
+   or
+   ```sh
+   bun dev
+   ```
+2. Open [http://localhost:3000](http://localhost:3000) to see the project running
+
+### Building for Production
+
+To create a production build, run:
+
+```sh
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+yarn build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+or
 
-## Learn More
+```sh
+pnpm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+or
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+bun build
+```
