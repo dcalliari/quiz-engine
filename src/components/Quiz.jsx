@@ -13,7 +13,7 @@ const Quiz = () => {
 	const [answers, setAnswers] = useState([]);
 	const [score, setScore] = useState(0);
 	const [showScore, setShowScore] = useState(false);
-	const [finalized, setFinalized] = useState(false);
+	const [showConfirmPopup, setShowConfirmPopup] = useState(false);
 
 	useEffect(() => {
 		resetQuiz();
@@ -36,7 +36,7 @@ const Quiz = () => {
 		setCurrentQuestion(0);
 		setScore(0);
 		setShowScore(false);
-		setFinalized(false);
+		setShowConfirmPopup(false);
 	};
 
 	const handleAnswerOptionClick = (selectedOption) => {
@@ -82,36 +82,53 @@ const Quiz = () => {
 	};
 
 	const handleFinishQuiz = () => {
-		if (answers.every((answer) => answer !== null)) {
-			const newScore = answers.reduce((acc, answer, index) => {
-				const question = questions[index];
+		if (answers.some((answer) => answer === null)) {
+			setShowConfirmPopup(true);
+		} else {
+			calculateScore();
+		}
+	};
+
+	const calculateScore = () => {
+		const newScore = answers.reduce((acc, answer, index) => {
+			const question = questions[index];
+			if (question.type === "one-choice") {
 				if (
-					question.type === "one-choice" &&
 					question.options.some((opt) => opt.text === answer && opt.isCorrect)
 				) {
 					return acc + 1;
 				}
+			} else if (question.type === "multiple-choice") {
 				if (
-					question.type === "multiple-choice" &&
+					Array.isArray(answer) &&
 					answer.every((ans) =>
 						question.options.some((opt) => opt.text === ans && opt.isCorrect),
 					)
 				) {
 					return acc + 1;
 				}
+			} else if (question.type === "input") {
 				if (
-					question.type === "input" &&
+					typeof answer === "string" &&
 					answer.toLowerCase() === question.correctAnswer.toLowerCase()
 				) {
 					return acc + 1;
 				}
-				return acc;
-			}, 0);
+			}
+			return acc;
+		}, 0);
 
-			setScore(newScore);
-			setShowScore(true);
-			setFinalized(true);
-		}
+		setScore(newScore);
+		setShowScore(true);
+		setShowConfirmPopup(false);
+	};
+
+	const handleConfirmFinish = () => {
+		calculateScore();
+	};
+
+	const handleCancelFinish = () => {
+		setShowConfirmPopup(false);
 	};
 
 	const answeredQuestions = answers.filter((answer) => answer !== null).length;
@@ -120,24 +137,20 @@ const Quiz = () => {
 		<div className="quiz">
 			{showScore ? (
 				<div className="score-section">
-					{finalized ? (
-						<>
-							<p>
-								You scored {score} out of {questions.length}
-							</p>
-							<div className="play-again-buttons">
-								<button
-									onClick={resetQuiz}
-									className="again-button"
-									type="button"
-								>
-									Play Again
-								</button>
-							</div>
-						</>
-					) : (
-						"Please finish the quiz to see your score."
-					)}
+					<>
+						<p>
+							You scored {score} out of {questions.length}
+						</p>
+						<div className="play-again-buttons">
+							<button
+								onClick={resetQuiz}
+								className="again-button"
+								type="button"
+							>
+								Play Again
+							</button>
+						</div>
+					</>
 				</div>
 			) : (
 				<>
@@ -162,7 +175,6 @@ const Quiz = () => {
 						{currentQuestion < questions.length - 1 ? (
 							<button
 								onClick={handleNextQuestion}
-								disabled={answers[currentQuestion] === null}
 								className="nav-button"
 								type="button"
 							>
@@ -171,7 +183,6 @@ const Quiz = () => {
 						) : (
 							<button
 								onClick={handleFinishQuiz}
-								disabled={answers[currentQuestion] === null}
 								className="nav-button"
 								type="button"
 							>
@@ -183,6 +194,32 @@ const Quiz = () => {
 						currentQuestion={answeredQuestions}
 						totalQuestions={questions.length}
 					/>
+					{showConfirmPopup && (
+						<div className="popup">
+							<div className="popup-content">
+								<p>
+									Are you sure you want to finish the quiz? Unanswered questions
+									will be skipped.
+								</p>
+								<div className="popup-buttons">
+									<button
+										onClick={handleConfirmFinish}
+										className="popup-button"
+										type="button"
+									>
+										Continue
+									</button>
+									<button
+										onClick={handleCancelFinish}
+										className="popup-button"
+										type="button"
+									>
+										Cancel
+									</button>
+								</div>
+							</div>
+						</div>
+					)}
 				</>
 			)}
 		</div>
