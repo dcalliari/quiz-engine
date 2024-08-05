@@ -53,6 +53,35 @@
         background-color: #6d6d6d;
       }
     }
+
+    .multiple-options-button {
+      display: flex;
+      align-items: center;
+      background-color: #35393b;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: relative;
+    
+      &:hover {
+        background-color: #6d6d6d;
+      }
+    
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #007bff;
+        margin-right: 15px;
+        transition: background-color 0.3s ease;
+    
+        &.filled {
+          background-color: #007bff;
+        }
+      }
+    }    
   }
 
   .input {
