@@ -109,8 +109,12 @@ const Quiz = () => {
 				}
 			} else if (question.type === "input") {
 				if (
-					typeof answer === "string" &&
-					answer.toLowerCase() === question.correctAnswer.toLowerCase()
+					Array.isArray(question.correctAnswers) &&
+					question.correctAnswers.some(
+						(correctAnswer) =>
+							typeof answer === "string" &&
+							answer.toLowerCase() === correctAnswer.toLowerCase(),
+					)
 				) {
 					return acc + 1;
 				}

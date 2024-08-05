@@ -32,7 +32,14 @@
 		"description": "Type your answer",
 		"image": "https://plus.unsplash.com/premium_photo-1683134169138-9037062cba51?w=500",
 		"question": "What is the smallest prime number?",
-		"correctAnswer": "2"
+		"correctAnswers": [
+			"2",
+			"two",
+			"the number 2",
+			"number 2",
+			"the number two",
+			"number two"
+		]
 	},
 	{
 		"type": "one-choice",
@@ -67,7 +74,7 @@
 		"description": "Type your answer",
 		"image": "https://plus.unsplash.com/premium_photo-1677025010781-de5c890c862a?w=500",
 		"question": "How many continents are there on Earth?",
-		"correctAnswer": "7"
+		"correctAnswers": ["7", "seven", "seven continents", "7 continents"]
 	},
 	{
 		"type": "one-choice",
@@ -102,7 +109,12 @@
 		"description": "Type your answer",
 		"image": "https://plus.unsplash.com/premium_photo-1669750791963-ec6f3a565fb9?w=500",
 		"question": "What is the largest ocean on Earth?",
-		"correctAnswer": "Pacific"
+		"correctAnswers": [
+			"Pacific",
+			"Pacific Ocean",
+			"the Pacific",
+			"the Pacific Ocean"
+		]
 	},
 	{
 		"type": "one-choice",
@@ -137,6 +149,16 @@
 		"description": "Type your answer",
 		"image": "https://plus.unsplash.com/premium_photo-1670055280031-764eb9f017b7?w=500",
 		"question": "What is the freezing point of water in degrees Celsius?",
-		"correctAnswer": "0"
+		"correctAnswers": [
+			"0",
+			"zero",
+			"0 degrees",
+			"zero degrees",
+			"0 degrees Celsius",
+			"zero degrees Celsius",
+			"0°C",
+			"0 degrees C",
+			"zero degrees C"
+		]
 	}
 ]
