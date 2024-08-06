@@ -28,12 +28,12 @@ const Question = ({
 				<button
 					key={option.text}
 					onClick={() => handleMultipleChoiceOptionClick(option.text)}
-					className={`multiple-options-button ${selectedAnswer?.includes(option.text) ? "selected" : ""}`}
+					className="multiple-options-button"
 					type="button"
 					aria-pressed={selectedAnswer?.includes(option.text)}
 				>
 					<span
-						className={`circle ${selectedAnswer?.includes(option.text) ? "filled" : ""}`}
+						className={`square ${selectedAnswer?.includes(option.text) ? "filled" : ""}`}
 					/>
 					{option.text}
 				</button>
